@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">Smart Sat</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_tv_home">Smart IPTV ATN</string>
+    <string name="channel_ico">Channel Name</string>
+    <string name="menu_clock_lbl">DigitalClock</string>
+    <string name="channel_icon_desc">Channel Icon</string>
+    <string name="btn_channels_txt">Channels</string>
+    <string name="btn_exit_txt">Exit</string>
+    <string name="btn_apps_txt">Apps</string>
+    <string name="btn_settings_txt">Settings</string>
+    <string name="allChannelList">Channel List</string>
+    <string name="okListHint">List hint</string>
+    <string name="lbl_menu">Menu</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_account">Account : </string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_pass">password</string>
+    <string name="btn_login">Login</string>
+    <string name="lbl_android_settings">Android Settings</string>
+    <string name="btn_wifi_settings">Wifi/Ethernet</string>
+    <string-array name="menu_items">
+        <item>Channels</item>
+        <item>Favorites</item>
+        <item>Applications</item>
+        <item>Settings</item>
+    </string-array>
+
+</resources>

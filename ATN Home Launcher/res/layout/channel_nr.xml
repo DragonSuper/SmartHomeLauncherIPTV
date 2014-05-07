@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cnt_channel_nr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="20dp"
+    android:background="@color/BlackTransparent" >
+    <TextView
+		    android:id="@+id/channel_nr"
+		    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_margin="5dp"
+        	android:background="@color/WhiteSmokeTransparent"
+        	android:padding="3dp"
+        	android:textColor="@color/White"
+        	android:textSize="50dp"/>
+</LinearLayout>

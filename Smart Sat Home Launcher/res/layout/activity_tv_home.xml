@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bigscreen" >
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/FullTransparent"/>
+
+	<include
+	    android:id="@+id/cnt_menu"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="20dp"
+	    layout="@layout/menu"
+	    android:visibility="invisible" />
+	
+	<include
+        android:id="@+id/settings_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/cnt_menu"
+        android:layout_margin="20dp"
+        layout="@layout/settings_layout"
+        android:visibility="invisible"/>
+	
+    <include
+        android:id="@+id/program_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/cnt_menu"
+        android:layout_margin="20dp"
+        layout="@layout/program_list"
+        android:visibility="invisible" />
+    
+    <include
+        android:id="@+id/favorites_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/cnt_menu"
+        android:layout_margin="20dp"
+        layout="@layout/favorites_list"
+        android:visibility="invisible" />
+    
+    <include
+        android:id="@+id/apps_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/cnt_menu"
+        android:layout_margin="20dp"        
+        layout="@layout/apps_list"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/channelInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_margin="20dp"
+        android:background="@color/BlackTransparent">
+
+		<TextView
+		    android:id="@+id/current_channel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:padding="20dp"
+		    android:text="99"
+		    android:textColor="#FFF"
+		    android:textSize="50dp" />
+
+	    <ImageView
+	        android:id="@+id/channel_ico"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_margin="10dp"
+	        android:layout_toRightOf="@id/current_channel"
+	        android:contentDescription="@string/channel_ico"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/channel_ico" />
+
+	    <DigitalClock
+	        android:id="@+id/clock"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/current_channel"
+	        android:layout_alignBottom="@+id/current_channel"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="44dp"
+	        android:text="DigitalClock"
+	        android:textSize="50dip" />
+
+	    <TextView
+	        android:id="@+id/channel_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/current_channel"
+	        android:layout_alignBottom="@+id/current_channel"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/channel_ico"
+	        android:text="Channel name"
+	        android:textColor="#FFF"
+	        android:textSize="50dp" />
+
+    </RelativeLayout>
+	
+</RelativeLayout>
